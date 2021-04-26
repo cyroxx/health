@@ -21,10 +21,10 @@
  *
  */
 
-namespace OCA\WorkflowPDFConverter;
+namespace OCA\Health;
 
 use OCA\WorkflowEngine\Entity\File;
-use OCA\WorkflowPDFConverter\BackgroundJobs\Convert;
+use OCA\Health\BackgroundJobs\Convert;
 use OCP\BackgroundJob\IJobList;
 use OCP\EventDispatcher\Event;
 use OCP\EventDispatcher\GenericEvent;

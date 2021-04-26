@@ -22,7 +22,7 @@
  *
  */
 
-namespace OCA\WorkflowPDFConverter\BackgroundJobs;
+namespace OCA\Health\BackgroundJobs;
 
 use Exception;
 use OC\BackgroundJob\QueuedJob;

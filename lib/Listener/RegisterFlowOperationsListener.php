@@ -23,9 +23,9 @@ declare(strict_types=1);
  *
  */
 
-namespace OCA\WorkflowPDFConverter\Listener;
+namespace OCA\Health\Listener;
 
-use OCA\WorkflowPDFConverter\Operation;
+use OCA\Health\Operation;
 use OCP\EventDispatcher\Event;
 use OCP\EventDispatcher\IEventListener;
 use OCP\IServerContainer;
@@ -46,6 +46,6 @@ class RegisterFlowOperationsListener implements IEventListener {
 			return;
 		}
 		$event->registerOperation($this->container->get(Operation::class));
-		Util::addScript('workflow_pdf_converter', 'workflow_pdf_converter');
+		Util::addScript('workflow_health_importer', 'workflow_health_importer');
 	}
 }

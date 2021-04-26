@@ -21,9 +21,9 @@
  *
  */
 
-namespace OCA\WorkflowPDFConverter\AppInfo;
+namespace OCA\Health\AppInfo;
 
-use OCA\WorkflowPDFConverter\Listener\RegisterFlowOperationsListener;
+use OCA\Health\Listener\RegisterFlowOperationsListener;
 use OCP\AppFramework\App;
 use OCP\AppFramework\Bootstrap\IBootContext;
 use OCP\AppFramework\Bootstrap\IBootstrap;
@@ -32,7 +32,7 @@ use OCP\WorkflowEngine\Events\RegisterOperationsEvent;
 
 class Application extends App implements IBootstrap {
 	public function __construct() {
-		parent::__construct('workflow_pdf_converter');
+		parent::__construct('workflow_health_importer');
 	}
 
 	public function register(IRegistrationContext $context): void {
