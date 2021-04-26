@@ -46,6 +46,6 @@ class RegisterFlowOperationsListener implements IEventListener {
 			return;
 		}
 		$event->registerOperation($this->container->get(Operation::class));
-		Util::addScript('workflow_health_importer', 'workflow_health_importer');
+		Util::addScript('health', 'health');
 	}
 }
