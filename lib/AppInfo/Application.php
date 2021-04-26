@@ -32,7 +32,7 @@ use OCP\WorkflowEngine\Events\RegisterOperationsEvent;
 
 class Application extends App implements IBootstrap {
 	public function __construct() {
-		parent::__construct('workflow_health_importer');
+		parent::__construct('health');
 	}
 
 	public function register(IRegistrationContext $context): void {
