@@ -64,11 +64,11 @@ class Operation implements ISpecificOperation {
 	}
 
 	public function getDisplayName(): string {
-		return $this->l->t('PDF conversion');
+		return $this->l->t('Import health data');
 	}
 
 	public function getDescription(): string {
-		return $this->l->t('Convert documents into the PDF format on upload and write.');
+		return $this->l->t('Import data from CSV files into the Health app.');
 	}
 
 	public function getIcon(): string {
