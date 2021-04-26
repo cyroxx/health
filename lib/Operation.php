@@ -72,7 +72,7 @@ class Operation implements ISpecificOperation {
 	}
 
 	public function getIcon(): string {
-		return $this->urlGenerator->imagePath('workflow_pdf_converter', 'app.svg');
+		return $this->urlGenerator->imagePath('health', 'app.svg');
 	}
 
 	public function isAvailableForScope(int $scope): bool {

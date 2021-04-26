@@ -113,7 +113,7 @@ class Convert extends QueuedJob {
 		if ($exitCode !== 0) {
 			$this->logger->error("could not convert {file}, reason: {out}",
 				[
-					'app' => 'workflow_pdf_converter',
+					'app' => 'health',
 					'file' => $node->getPath(),
 					'out' => $out
 				]
