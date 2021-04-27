@@ -58,9 +58,13 @@ class Operation implements ISpecificOperation {
 	}
 
 	public function validateOperation(string $name, array $checks, string $operation): void {
-		if (!in_array($operation, Operation::MODES)) {
-			throw new UnexpectedValueException($this->l->t('Please choose a mode.'));
+		/* if (!in_array($operation, Operation::MODES)) {
+			throw new UnexpectedValueException("#name:".$name."#checks:".implode("|",$checks)."#operation:".$operation."#".$this->l->t('Please choose a mode.'));
 		}
+		if (empty($checks)) {
+			throw new UnexpectedValueException($this->l->t('No rule given'));
+		} */
+		pass;
 	}
 
 	public function getDisplayName(): string {
