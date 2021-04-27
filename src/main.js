@@ -20,14 +20,23 @@
  *
  */
 
-import Vue from 'vue'
-import Vuex from 'vuex'
-import { translate, translatePlural } from 'nextcloud-l10n'
-import store from './store/store'
+// import Vue from 'vue'
+// import Vuex from 'vuex'
+// import { translate, translatePlural } from 'nextcloud-l10n'
+// import store from './store/store'
 
-import App from './App'
+// import App from './App'
 
-Vue.use(Vuex)
+import ConvertToPdf from './ConvertToPdf'
+
+window.OCA.WorkflowEngine.registerOperator({
+	id: 'OCA\\Health\\Operation',
+	operation: 'keep;preserve',
+	options: ConvertToPdf,
+	color: '#dc5047',
+})
+
+/* Vue.use(Vuex)
 
 Vue.prototype.t = translate
 Vue.prototype.n = translatePlural
@@ -37,3 +46,4 @@ export default new Vue({
 	store,
 	render: h => h(App),
 })
+*/
